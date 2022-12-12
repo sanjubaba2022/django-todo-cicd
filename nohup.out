@@ -1,0 +1,56 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+December 11, 2022 - 18:53:15
+Django version 4.1.4, using settings 'todoApp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[11/Dec/2022 18:53:27] "GET /todos/24/delete HTTP/1.1" 302 0
+[11/Dec/2022 18:53:27] "GET /todos/ HTTP/1.1" 200 3500
+[11/Dec/2022 18:53:33] "POST /todos/23/update HTTP/1.1" 302 0
+[11/Dec/2022 18:53:33] "GET /todos/ HTTP/1.1" 200 3537
+[11/Dec/2022 18:53:39] "GET /todos/23/delete HTTP/1.1" 302 0
+[11/Dec/2022 18:53:39] "GET /todos/ HTTP/1.1" 200 2920
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Dec/2022 19:03:09] "GET / HTTP/1.1" 400 63101
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.10/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Dec/2022 19:03:10] "GET /favicon.ico HTTP/1.1" 400 63067
+[11/Dec/2022 19:03:36] "GET / HTTP/1.1" 302 0
+[11/Dec/2022 19:03:36] "GET /todos HTTP/1.1" 301 0
+[11/Dec/2022 19:03:36] "GET /todos/ HTTP/1.1" 200 2920
+[11/Dec/2022 19:03:37] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[11/Dec/2022 19:03:37] "GET /favicon.ico HTTP/1.1" 404 2570
+[11/Dec/2022 19:05:47] "GET /todos/ HTTP/1.1" 200 2920
+[11/Dec/2022 19:05:53] "GET /todos/ HTTP/1.1" 200 2920
+[11/Dec/2022 19:07:29] "GET /todos/ HTTP/1.1" 200 2920
+the input device is not a TTY
