@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todo-app
+spec:
+  containers:
+  - name: todo-container
+    image: sanjubaba2022/django-todo:lat16
+    ports:
+    - containerPort: 8000
